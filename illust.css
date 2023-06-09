@@ -1,0 +1,240 @@
+/* ここからreset.css */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #101010;
+    overscroll-behavior: none;
+    line-height: 1;
+    margin: 0; 
+    /*後消し*/
+    /*background-image: url("../image/work/demo.png");*/
+    background-size: cover; 
+    /*後消し*/
+    /*font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'メイリオ', 'MS Ｐゴシック', 'MS PGothic', sans-serif;*/
+    font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+}
+
+/*.title_wrap {
+
+}*/
+
+.illust_title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    font-feature-settings: "palt";
+    padding-bottom: 3px;
+    color: #fff;
+}
+
+.illust_sub {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.illustration {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 1fr 1fr;
+    /*gap: 10px;*/
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.illust_wrap {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.illust_item {
+    width: 100%;
+    
+}
+
+.illust_number {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+
+}
+
+.illust_text {
+    font-size: 14px;
+    color: #fff;
+}
+
+/*-------------------------------
+    footer
+---------------------------------*/
+
+.footer {
+    padding: 15px 0;
+    text-align: center;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    
+  }
+  
+  .footer .copyright {
+    margin: 0;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .copy_name {
+      color: #fff;
+  }
+  
+   /*.divider-d {
+      margin: 0;
+      border-top: solid 1px #fff;
+      position: fixed;
+      bottom: 6.7%;
+      width: 100%;
+      left: 0;
+    }*/
+
+
+/*-------------------------------------
+    pc size
+-------------------------------------*/
+@media only screen and (max-width: 991px) {
+    /*トグルメニュー*/
+    .contact.active {
+        opacity: 1;
+        /* bottom: 11%; */
+        left: 13%;
+        transition: 0.5s;
+    }
+    /*トグルメニュー*/
+
+    .illustration {
+        display: grid;
+        height: 300px;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 1fr 1fr;
+        /* gap: 10px; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*-------------------------------------
+    ipad size
+-------------------------------------*/
+@media only screen and (max-width: 767px) {
+    /*トグルメニュー*/
+    .contact.active {
+        opacity: 1;
+        /* bottom: 11%; */
+        left: 13.5%;
+        transition: 0.5s;
+    }
+    /*トグルメニュー*/
+
+    .point_text {
+        line-height: 2.0em;
+        letter-spacing: 0.5px;
+        font-size: 11px;
+        color: gray;
+        width: 50%;
+        margin-left: auto;
+        text-align: start;
+}
+    .illustration {
+        display: grid;
+        height: 300px;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 1fr 1fr;
+        /* gap: 10px; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*-------------------------------------
+    SP size
+-------------------------------------*/
+@media only screen and (max-width: 480px) {
+    /*トグルメニュー*/
+    .nav-left ul {
+        position: relative;
+        top: 30%;
+        left: 10%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .button {
+        position: relative;
+        top: 23vh;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        transition: 0.5s;
+    }
+    .media-icons.active {
+        opacity: 1;
+        left: 20%;
+        transition: 0.8s ease;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        bottom: 13.1%;
+        transition: 0.5s;
+    }
+     /*トグルメニュー*/
+
+    .illustration {
+        display: block;
+        height: 300px;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 1fr 1fr;
+        /* gap: 10px; */
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+ 
