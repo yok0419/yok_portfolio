@@ -39,20 +39,6 @@ body {
 h1,h2{
     color: black;
 }
-.logo{
-    position: fixed;
-    top: 4rem;
-    left: 5%;
-    z-index: 100;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    /*pointer-events: none;*/
-    transition: 1s;
-    font-feature-settings: initial;
-    /*font-family: "Monument Extended";*/
-}
 
 .logo.active{
     color: #000;
