@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f6f3ea !important;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+.defact_s ,.doubles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doubles_s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+.work_title {
+    /*text-align: center;*/
+    line-height: 1.2em;
+    margin: 50px 0 50px 0;
+}
+.number {
+ font-weight: 600;
+ letter-spacing: 0.05em;
+ color: #050505;
+ font-family: 'Poppins';
+ font-feature-settings: "palt";
+ font-family: 'Oswald', sans-serif;
+}
+
+.top_title {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    margin-left: auto;
+    /*width: 30%;*/
+    text-align: right;
+    font-feature-settings: "palt";
+    font-family: 'Gothic Medium BBB';
+}
+
+.details {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: auto;
+    /*width: 30%;*/
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+}
+
+.tool {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding-bottom: 10px;
+    margin: auto;
+    /*width: 30%;*/
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+}
+.point_text {
+    line-height: 2.0em;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    color: gray;
+    width: 22%;
+    margin-left: auto;
+    text-align: start;
+    font-family: 'Gothic Medium BBB';
+}
+.banner {
+    overflow: hidden;
+    margin: 10px;
+}
+
+.banner_img ,.doubles_img, .amina_img{
+    width: 100%;
+    filter: grayscale(0);
+    transition: 1s all;
+}
+
+.doubles_img_s {
+    width: 80%;
+    filter: grayscale(0);
+    transition: 1s all;
+}
+.doubles_img_s:hover {
+    transition-duration: 0.5s;
+    filter: grayscale(100%);
+    /*transform: scale(1.1);*/
+    transform:scale(1.2,1.2);
+    transition:1s all;
+}
+.banner_img:hover, .doubles_img:hover, .amina_img:hover {
+    /*ilter: grayscale(0);*/
+    transition-duration: 0.5s;
+    filter: grayscale(100%);
+    transform:scale(1.2,1.2);
+    transition:1s all;
+}
+
+
+.amina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------------------------
+	Footer
+--------------------------------------------------------------*/
+.footer {
+  padding: 15px 0;
+  text-align: center;
+  height: auto;
+  
+}
+
+.footer .copyright {
+  margin: 0;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.copy_name {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+  .divider-d {
+    margin: 0;
+    border-top: solid 1px #fff;
+  }
+
+@keyframes rotateText
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+.text span{
+    position: absolute;
+    left: 50%;
+    font-size: 1.0em;
+    transform-origin: 0 100px;
+    font-weight: 300;
+}
+p.text-font{
+    letter-spacing: 0.5em;
+}
+/*-------------------------------
+    footer
+---------------------------------*/
+
+.footer {
+    padding: 15px 0;
+    text-align: center;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    
+  }
+  
+  .footer .copyright {
+    margin: 0;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .copy_name {
+      color: #fff;
+  }
+  
+    .divider-d {
+      margin: 0;
+      border-top: solid 1px #fff;
+    }
+
+
+
+
+/*-------------------------------------
+    pc size
+-------------------------------------*/
+@media only screen and (max-width: 991px) {
+    /*トグルメニュー*/
+    .contact.active {
+        opacity: 1;
+        /* bottom: 11%; */
+        left: 13%;
+        transition: 0.5s;
+    }
+    /*トグルメニュー*/
+    .point_text {
+        line-height: 2.0em;
+        letter-spacing: 0.5px;
+        font-size: 11px;
+        color: gray;
+        width: 40%;
+        margin-left: auto;
+        text-align: start;
+    }
+}
+/*-------------------------------------
+    ipad size
+-------------------------------------*/
+@media only screen and (max-width: 767px) {
+    /*トグルメニュー*/
+    .contact.active {
+        opacity: 1;
+        /* bottom: 11%; */
+        left: 13.5%;
+        transition: 0.5s;
+    }
+    /*トグルメニュー*/
+    .point_text {
+        line-height: 2.0em;
+        letter-spacing: 0.5px;
+        font-size: 11px;
+        color: gray;
+        width: 50%;
+        margin-left: auto;
+        text-align: start;
+}
+}
+/*-------------------------------------
+    SP size
+-------------------------------------*/
+@media only screen and (max-width: 480px) {
+     /*トグルメニュー*/
+     .nav-left ul {
+        position: relative;
+        top: 30%;
+        left: 10%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .button {
+        position: relative;
+        top: 23vh;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        transition: 0.5s;
+    }
+    .media-icons.active {
+        opacity: 1;
+        left: 20%;
+        transition: 0.8s ease;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        bottom: 13.1%;
+        transition: 0.5s;
+    }
+     /*トグルメニュー*/
+
+    .defact_s, .doubles, .amina {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .doubles_s {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 2fr 2fr;
+        text-align: center;
+    }
+    .point_text {
+        line-height: 2.0em;
+        letter-spacing: 0.5px;
+        font-size: 11px;
+        color: gray;
+        width: 100%;
+        margin: auto;
+        text-align: start;
+    }
+    .top_title, .number {
+        font-size: 14px;
+    }
+    
+}
+
+
+ 
