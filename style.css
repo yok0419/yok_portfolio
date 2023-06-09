@@ -762,8 +762,8 @@ section .two{
   .progress-bar.pb-dark {
     /*background: #ef652e;*/
     /*background: #cae328;*/
-    /*background: #e3284f;*/
-    background: #8a8687;
+    background: #e3284f;
+    /*background: #8a8687;*/
   }
   
   .progress-bar span {
