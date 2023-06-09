@@ -1,0 +1,322 @@
+/* ここからreset.css */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f6f3ea;
+    overscroll-behavior: none;
+    line-height: 1;
+    margin: 0; 
+    /*後消し*/
+    /*background-image: url("../image/work/demo.png");*/
+    background-size: cover; 
+    /*後消し*/
+    /*font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'メイリオ', 'MS Ｐゴシック', 'MS PGothic', sans-serif;*/
+    font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+}
+
+.decoboco_title {
+    color: #101010;
+    font-size: 40px;
+    font-weight: bolder;
+    font-feature-settings: "palt";
+    font-family: 'Oswald', sans-serif;
+}
+.sub_title {
+    display: inline-flex;
+    position: relative;
+    font-feature-settings: "palt";
+    /*left: 85px;*/
+    /*top: 10px;*/
+    top: 11px;
+    font-weight: 600;
+}
+.skill {
+    position: relative;
+    /*top: 20px;*/
+    top: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    background: none;
+    display: block;
+    height: 0;
+    font-feature-settings: "palt";
+    letter-spacing: 0.4px;
+}
+.skill_datail {
+    font-size: 10px;
+    font-feature-settings: "palt";
+    letter-spacing: 0.2px;
+}
+.url_data {
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    /*top: 60px;*/
+    top: 53px;
+    /*left: -498px;*/
+    font-feature-settings: "palt";
+    letter-spacing: 0.4px;
+}
+.ad{
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    left: 305px;
+    top: -24px;
+    font-size: 10px;
+    font-feature-settings: "palt";
+    letter-spacing: 0.4px;
+}
+
+.work_title {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+   /* align-items: flex-end;*/
+    padding: 30px;
+    position: relative;
+    /*top: 160px;*/
+    left: 40px;
+    font-feature-settings: "palt";
+    letter-spacing: 0.4px;
+
+}
+
+.web_app {
+    display: flex;
+}
+.web_site {
+    padding: 300px 10px 0 10px;
+    
+}
+.web_tweet {
+    padding: 0 10px 0 10px;
+    position: relative;
+    top: -250px;
+}
+.web_page {
+    width: 100%;
+    border: solid 1px #dad9d9;
+}
+
+.tweet_img {
+    width: 80%;
+    border: solid 1px #dad9d9;
+}
+/*.web_tweet {
+    width: 80%;
+    border: solid 1px #dad9d9;
+    position: relative;
+    top: 50px;
+}*/
+.production_time {
+    position: relative;
+    top: 68px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.p_time {
+    position: relative;
+    top: 1px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.product_datile {
+    display: inline-block;
+    width: 295px;
+    font-size: 12px;
+    color: gray;
+    position: relative;
+    top: 120px;
+    line-height: 2em;
+}
+.video_tweet {
+    width: 79%;
+}
+
+/*-------------------------------
+    footer
+---------------------------------*/
+
+.footer {
+    padding: 15px 0;
+    text-align: center;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    
+  }
+  
+  .footer .copyright {
+    margin: 0;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .copy_name {
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+  }
+  
+    .divider-d {
+      margin: 0;
+      border-top: solid 1px #fff;
+    }
+
+
+
+
+/*-------------------------------------
+    pc size
+-------------------------------------*/
+@media only screen and (max-width: 991px) {
+     /*トグルメニュー*/
+     .contact.active {
+        opacity: 1;
+        left: 13%;
+        transition: 0.5s;
+    }
+    /*トグルメニュー*/
+    .web_tweet {
+        padding: 0 10px 0 10px;
+        position: relative;
+        top: -250px;
+    }
+    .video_tweet {
+        width: 79%;
+    }
+}
+/*-------------------------------------
+    ipad size
+-------------------------------------*/
+@media only screen and (max-width: 767px) {
+    /*トグルメニュー*/
+    .contact.active {
+        opacity: 1;
+        /* bottom: 11%; */
+        left: 13.5%;
+        transition: 0.5s;
+    }
+    /*トグルメニュー*/
+    .work_title {
+        padding: 0;
+        position: relative;
+        top: 70px;
+        left: 0;
+    }
+
+    .web_tweet {
+        padding: 0 10px 0 10px;
+        position: relative;
+        top: -180px;
+    }
+    .video_tweet {
+        width: 78%;
+    }
+}
+/*-------------------------------------
+    SP size
+-------------------------------------*/
+@media only screen and (max-width: 480px) {
+    /*トグルメニュー*/
+    .nav-left ul {
+        position: relative;
+        top: 30%;
+        left: 10%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .button {
+        position: relative;
+        top: 23vh;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        transition: 0.5s;
+    }
+    .media-icons.active {
+        opacity: 1;
+        left: 20%;
+        transition: 0.8s ease;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        bottom: 13.1%;
+        transition: 0.5s;
+    }
+     /*トグルメニュー*/
+
+    /*decoboco*/
+    .url_data {
+        position: relative;
+        top: 75px !important;
+    }
+    .production_time {
+        position: relative;
+        top: 90px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .decoboco_title {
+        color: #101010;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .work_title {
+        padding: 0 !important;
+        position: relative;
+        top: 38px;
+        left: 0;
+    }
+    .web_page {
+        width: 100%;
+        border: solid 1px #dad9d9;
+    }
+    .web_site {
+        padding: 200px 10px 0 10px;
+    }
+    
+    
+     /* decoboco */
+     /* work */
+     .defact_s, .doubles {
+        display: grid !important;
+        justify-content: center;
+        align-items: center;
+     }
+     /* work */
+}
