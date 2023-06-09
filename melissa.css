@@ -39,10 +39,21 @@ body {
 h1,h2{
     color: black;
 }
-.logo {
-    mix-blend-mode: difference;
-    font-family: 'Oswald', sans-serif;
+.logo{
+    position: fixed;
+    top: 4rem;
+    left: 5%;
+    z-index: 100;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    /*pointer-events: none;*/
+    transition: 1s;
+    font-feature-settings: initial;
+    /*font-family: "Monument Extended";*/
 }
+
 .logo.active{
     color: #000;
     mix-blend-mode: darken;
