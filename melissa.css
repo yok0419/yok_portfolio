@@ -39,6 +39,10 @@ body {
 h1,h2{
     color: black;
 }
+.logo {
+    mix-blend-mode: difference;
+    font-family: 'Oswald', sans-serif;
+}
 
 .melissa_title {
     color: #101010;
