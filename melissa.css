@@ -43,6 +43,10 @@ h1,h2{
     mix-blend-mode: difference;
     font-family: 'Oswald', sans-serif;
 }
+.logo.active{
+    color: #000;
+    mix-blend-mode: darken;
+}
 
 .melissa_title {
     color: #101010;
