@@ -1,0 +1,120 @@
+/* ここからreset.css */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f6f3ea;
+    overscroll-behavior: none;
+    line-height: 1;
+    margin: 0; 
+    /*font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'メイリオ', 'MS Ｐゴシック', 'MS PGothic', sans-serif;*/
+    font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+}
+
+h1,h2{
+    color: black;
+}
+
+.button{
+    position: relative;
+    z-index: 1;
+    color: #000000;
+    border: 1px solid #000000;
+    /*left: 5%;*/
+    top: 20vh;
+    width: 10rem;
+    padding: 0.6rem;
+    text-align: center;
+    transition: .5s;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: #101010;
+    /*color: #ffffff;*/
+    transition: .5s;
+}
+
+h4{
+    font-weight: 300;
+}
+.link_btn:hover {
+    color: #ffffff;
+}
+
+/*-------------------------------------
+    pc size
+-------------------------------------*/
+@media only screen and (max-width: 991px) {
+
+}
+/*-------------------------------------
+    ipad size
+-------------------------------------*/
+@media only screen and (max-width: 767px) {
+    
+}
+/*-------------------------------------
+    SP size
+-------------------------------------*/
+@media only screen and (max-width: 480px) {
+
+    /*トグルメニュー*/
+    .nav-left ul {
+        position: relative;
+        top: 30%;
+        left: 10%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .button {
+        position: relative;
+        top: 23vh;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        transition: 0.5s;
+    }
+    .media-icons.active {
+        opacity: 1;
+        left: 20%;
+        transition: 0.8s ease;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        bottom: 13.1%;
+        transition: 0.5s;
+    }
+     /*トグルメニュー*/
+
+}
