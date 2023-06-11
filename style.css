@@ -941,7 +941,8 @@ p.text-font{
 
      .parallax-text {
         position: absolute;
-        font-size: 30px;
+        /*font-size: 30px;*/
+	font-size: 24px;
         top: 18%;
         /*left: 50%;*/
         left: 25%;
