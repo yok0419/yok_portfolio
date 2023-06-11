@@ -520,8 +520,11 @@ section .two{
     transform: scaleX(0);
     transform-origin:0 0 ;
 }
-
-
+/* sp carousel */
+.carousel {
+        display: none;
+    }
+/* sp carousel */
 /*-------------------------------------
     section_3 profile
  --------------------------------------*/
