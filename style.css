@@ -941,6 +941,10 @@ p.text-font{
         transition: 0.5s;
     }
      /*トグルメニュー*/
+     .logo {
+       mix-blend-mode: difference;
+       font-family: 'Oswald', sans-serif;
+    }
 	
 	/* PC スライダー */
      .slider-wrapper {
