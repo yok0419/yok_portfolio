@@ -938,6 +938,18 @@ p.text-font{
         transition: 0.5s;
     }
      /*トグルメニュー*/
+	
+	/* PC スライダー */
+     .slider-wrapper {
+        display: none;
+     }
+     /* PC スライダー */
+
+     /* SPカルーセル */
+    .carousel {
+        display: block;
+    }
+    /* SPカルーセル */
 
      .parallax-text {
         position: absolute;
