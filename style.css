@@ -957,7 +957,7 @@ p.text-font{
         display: block;
     }
     /* SPカルーセル */
-
+	
      .parallax-text {
         position: absolute;
         /*font-size: 30px;*/
@@ -968,7 +968,7 @@ p.text-font{
         transform: translate(-50%,-50%);
         font-weight: bold;
         color: #fff;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Oswald';
     }
    .slider {
     position: absolute;
