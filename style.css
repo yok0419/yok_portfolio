@@ -903,7 +903,68 @@ p.text-font{
     ipad size
 -------------------------------------*/
 @media only screen and (max-width: 767px) {
-    
+     /*トグルメニュー*/
+    .nav-left ul {
+        position: relative;
+        top: 30%;
+        left: 10%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .button {
+        position: relative;
+        top: 23vh;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        transition: 0.5s;
+    }
+    .media-icons.active {
+        opacity: 1;
+        left: 20%;
+        transition: 0.8s ease;
+    }
+    .contact.active {
+        opacity: 1;
+        left: 17%;
+        bottom: 13.1%;
+        transition: 0.5s;
+    }
+     /*トグルメニュー*/
+     /* col-size */
+     .container div {
+        /* background: #ccc; */
+        /* border: solid 8px #000; */
+        text-align: center;
+        height: 40%;
+        display: flex;
+        /*flex-wrap: nowrap;*/ 
+        justify-content: center;
+        align-items: center;
+    }
+    .container, .container-sm {
+        max-width: 100%;
+    }
+     /* col-size */
+     .column_inner {
+        width: 80%;
+        position: absolute;
+        top: 45%;
+        left: 110%;
+    }
+     .img-left {
+        width: 200px;
+        position: relative;
+        right: 0;
+        top: 200px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /*-------------------------------------
     SP size
