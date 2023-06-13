@@ -222,6 +222,13 @@ body {
         bottom: 13.1%;
         transition: 0.5s;
     }
+   .large {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .small {
+        font-size: 0.5rem;
+    }
      /*トグルメニュー*/
 
     .illustration {
